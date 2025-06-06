@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCLE FOR</title>
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Nunito, sans-serif;
+            box-sizing: border-box;
+        }
+
+        #intro {
+            background-color: bisque;
+            padding: 5px 30px;
+            /* height: 100px;
+            overflow-y: scroll;
+            scrollbar-color: pink; */
+        }
+
+        label {
+            font-weight: 700;
+            margin-right: 2em;
+        }
+
+        input[type='text'] {
+            width: 48em;
+            padding: 2px;
+            height: 1.6em;
+            font-family: inherit;
+            border: 1px solid crimson;
+        }
+
+        button {
+            width: 15em;
+            margin: 0 2.5em;
+            padding: 3px;
+        }
+
+        #salida {
+            border: 1px solid crimson;
+            height: 150px;
+        }
+
+        code {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Juguemos con textos</h1>
+
+    <div id="intro">
+        <p>Recordemos que los textos son como arrays inmutables (<em>se pueden recorrer, pero no se pueden cambiar</em>).</p>
+        <p> Se pueden recorrer sus letras usando el bucle <code>for</code>, y los métodos de String: 
+            <a  target="_blank"
+                href="https://www.w3schools.com/js/js_string_methods.asp#mark_length">
+                <code>String.length</code></a> y  
+            <a  target="_blank"
+                href="https://www.w3schools.com/js/js_string_methods.asp#mark_charat">
+                <code>String.charAt(i)</code></a> (entre otras).
+            </p>
+        <p>Accede a todos los 
+            <a target="_blank" href="https://www.w3schools.com/js/js_string_methods.asp">métodos de String</a>.</p>
+        <p>Deberás crear varias funciones que recorran el texto con bucles <code>for</code> y mostrarán el resultado de la misma en el párrafo <code>resultado</code></p>
+    </div>
+    <div id="entrada">
+        <p>
+            <label for="texto">Escribe una frase sin usar acentos: </label>
+            <input id="texto" type="text" value="Escribe un texto sin acentos">
+        </p>
+        <p>
+            <button type="button" onclick="mostrarTextoAlReves()">Mostrar Texto al Revés</button>
+            <span>... <code>function mostrarTextoAlReves()</code></span>
+        </p>
+        <p>
+            <button type="button" onclick="contarVocales()">Contar Vocales del Texto</button>
+            <span>... <code>function contarVocales()</code></span>
+        </p>
+        <p>
+            <button type="button" onclick="contarPalabras()">Contar Palabras en Texto</button>
+            <span>... <code>function contarPalabras()</code></span>
+        </p>
+    </div>
+    <div id="salida">
+        <p><b>&nbsp;Respuesta:</b></p>
+        <p id="respuesta"> </p>
+    </div>
+
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
